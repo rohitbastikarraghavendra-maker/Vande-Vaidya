@@ -1,0 +1,44 @@
+{
+  "normalized_english": "I have had chest pain since yesterday.",
+  "turn_translations": [
+    {
+      "turn_id": "688cb2fa-6c96-49a4-9579-7c5a5a295f20",
+      "text_english": "I have had chest pain since yesterday."
+    }
+  ],
+  "language_detected": [
+    "hi-IN"
+  ],
+  "code_mixed": true,
+  "chief_complaint": "chest pain",
+  "complaint_group": "chest_pain",
+  "symptoms": [
+    {
+      "code": "chest_pain",
+      "name": "chest pain",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "chest mein pain"
+    }
+  ],
+  "patient": {
+    "name": null,
+    "age": null,
+    "sex": "unknown"
+  },
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "missing_information": [],
+  "suggested_level": "MEDIUM",
+  "suggested_reason": "Demo symptom mapping",
+  "suggested_red_flags": [],
+  "confidence": "MEDIUM"
+}

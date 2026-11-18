@@ -1,0 +1,68 @@
+{
+  "normalized_english": "Severe chest pain for half an hour, difficulty breathing and sweating. I am 54 years old.",
+  "turn_translations": [
+    {
+      "turn_id": "eea35bb3-f11e-436c-9841-aada8aed59e3",
+      "text_english": "Severe chest pain for half an hour, difficulty breathing and sweating. I am 54 years old."
+    }
+  ],
+  "language_detected": [
+    "kn-IN"
+  ],
+  "code_mixed": true,
+  "chief_complaint": "chest pain",
+  "complaint_group": "chest_pain",
+  "symptoms": [
+    {
+      "code": "chest_pain",
+      "name": "chest pain",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "chest alli tumba pain"
+    },
+    {
+      "code": "breathlessness",
+      "name": "breathlessness",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "usiraata kashta"
+    },
+    {
+      "code": "sweating",
+      "name": "sweating",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "bevaru"
+    }
+  ],
+  "patient": {
+    "name": null,
+    "age": 54,
+    "sex": "unknown"
+  },
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "missing_information": [],
+  "suggested_level": "MEDIUM",
+  "suggested_reason": "Demo symptom mapping",
+  "suggested_red_flags": [],
+  "confidence": "MEDIUM"
+}

@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "assessment_id": "d16c4635-7812-40db-9323-3b4a3c831fd2",
+  "patient_id": "1b3139c3-608d-42c3-a980-360b821d8597",
+  "patient_display_id": "PAT-K2M7",
+  "created_at": "2026-11-18T05:23:11.270Z",
+  "completed_at": "2026-11-18T05:23:11.271Z",
+  "language": {
+    "primary": "kn-IN",
+    "detected": [
+      "kn-IN"
+    ],
+    "code_mixed": true
+  },
+  "patient": {
+    "name": "Manjunath",
+    "age": 35,
+    "sex": "male",
+    "village": null,
+    "phone": null
+  },
+  "transcript": {
+    "original": "Nanna hesaru Manjunath, thirty five. Nange one week inda fever ide, body pain ide, appetite illa.\nNo\nNo\nYes",
+    "normalized_english": "I am Manjunath, 35. I have had a fever for a week, body aches and no appetite.\nIs breathing difficult? No\nAre you feeling confused? No\nCan you drink fluids? Yes",
+    "turns": [
+      {
+        "turn_id": "f3958880-d7e0-4e32-90ca-9c8194cc8957",
+        "role": "patient",
+        "text": "Nanna hesaru Manjunath, thirty five. Nange one week inda fever ide, body pain ide, appetite illa.",
+        "text_english": "I am Manjunath, 35. I have had a fever for a week, body aches and no appetite.",
+        "input_mode": "voice",
+        "question_id": null,
+        "created_at": "2026-11-18T05:23:11.270Z"
+      },
+      {
+        "turn_id": "485dfc9f-cf98-4f07-a9f0-6a47fa7df099",
+        "role": "assistant",
+        "text": "Is breathing difficult?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "cp_breath",
+        "created_at": "2026-11-18T05:23:11.270Z"
+      },
+      {
+        "turn_id": "7e5944ba-a23c-4d5e-96d3-e97d88726a8c",
+        "role": "patient",
+        "text": "No",
+        "text_english": "No",
+        "input_mode": "button",
+        "question_id": "cp_breath",
+        "created_at": "2026-11-18T05:23:11.270Z"
+      },
+      {
+        "turn_id": "6c16807c-3317-42df-aa1b-43fefc4e0063",
+        "role": "assistant",
+        "text": "Are you feeling confused?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "fv_confusion",
+        "created_at": "2026-11-18T05:23:11.271Z"
+      },
+      {
+        "turn_id": "b52da359-66da-492b-a4a8-5ebf360ac7f3",
+        "role": "patient",
+        "text": "No",
+        "text_english": "No",
+        "input_mode": "button",
+        "question_id": "fv_confusion",
+        "created_at": "2026-11-18T05:23:11.271Z"
+      },
+      {
+        "turn_id": "6245d7f6-4b45-42a4-a977-9fb9cc3f1f64",
+        "role": "assistant",
+        "text": "Can you drink fluids?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "fv_drinking",
+        "created_at": "2026-11-18T05:23:11.271Z"
+      },
+      {
+        "turn_id": "6c0778fc-448b-41d4-a405-631b56cff796",
+        "role": "patient",
+        "text": "Yes",
+        "text_english": "Yes",
+        "input_mode": "button",
+        "question_id": "fv_drinking",
+        "created_at": "2026-11-18T05:23:11.271Z"
+      }
+    ]
+  },
+  "chief_complaint": "fever",
+  "symptoms": [
+    {
+      "code": "fever",
+      "name": "fever",
+      "present": true,
+      "duration": "one week",
+      "duration_hours": 168,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "fever"
+    },
+    {
+      "code": "body_ache",
+      "name": "body ache",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "body pain"
+    },
+    {
+      "code": "loss_of_appetite",
+      "name": "loss of appetite",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "appetite illa"
+    },
+    {
+      "code": "breathlessness",
+      "name": "breathlessness",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "No"
+    },
+    {
+      "code": "confusion",
+      "name": "confusion",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "No"
+    },
+    {
+      "code": "unable_to_drink",
+      "name": "unable to drink",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "Yes"
+    }
+  ],
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "red_flags": [
+    {
+      "code": "PROLONGED_FEVER",
+      "label": "Fever lasting 5 days or more",
+      "level": "MEDIUM",
+      "source": "DETERMINISTIC_RULE",
+      "evidence": [
+        "fever"
+      ]
+    }
+  ],
+  "triage": {
+    "level": "MEDIUM",
+    "reason": "Fever lasting 5 days or more",
+    "requires_escalation": false,
+    "confidence": "MEDIUM",
+    "rule_level": "MEDIUM",
+    "model_level": "MEDIUM",
+    "decided_by": "RULE_AND_MODEL",
+    "recommended_action": "Speak with a healthcare worker.",
+    "recommended_facility_type": "PHC"
+  },
+  "escalation": null,
+  "clinical_note": {
+    "format": "SBAR",
+    "situation": "35-year-old patient; complaint: fever.",
+    "background": "Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.",
+    "assessment": "Triage MEDIUM. Fever lasting 5 days or more This is not a diagnosis.",
+    "recommendation": "Speak with a healthcare worker.",
+    "relevant_positives": [
+      "fever",
+      "body ache",
+      "loss of appetite"
+    ],
+    "relevant_negatives": [
+      "breathlessness",
+      "confusion",
+      "unable to drink"
+    ],
+    "reported_information": [
+      "fever",
+      "body ache",
+      "loss of appetite",
+      "Denies breathlessness",
+      "Denies confusion",
+      "Denies unable to drink",
+      "Manjunath",
+      "Age 35",
+      "male"
+    ],
+    "inferred_information": [
+      "fever: 168 hours",
+      "Fever lasting 5 days or more (DETERMINISTIC_RULE)"
+    ],
+    "missing_information": [],
+    "vitals": "NOT_RECORDED",
+    "disclaimer": "Automated triage. Clinical review is required.",
+    "generated_by": "TEMPLATE",
+    "text": "Situation: 35-year-old patient; complaint: fever.\nBackground: Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.\nAssessment: Triage MEDIUM. Fever lasting 5 days or more This is not a diagnosis.\nRecommendation: Speak with a healthcare worker."
+  },
+  "missing_information": [],
+  "pipeline": {
+    "degraded": false,
+    "stt_provider": "mock",
+    "llm_model": "mock",
+    "time_to_triage_ms": 1,
+    "errors": []
+  },
+  "referral": {
+    "status": "NOT_REFERRED",
+    "referral_id": null,
+    "facility_id": null,
+    "updated_at": null
+  },
+  "sync": {
+    "status": "PENDING",
+    "last_synced_at": null,
+    "updated_at": "2026-11-18T05:23:11.271Z",
+    "origin": "patient_app"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "normalized_english": "I am Sunita, 28. I have had a mild cold and runny nose since yesterday, without fever.",
+  "turn_translations": [
+    {
+      "turn_id": "09c4ff7e-c5a3-45fe-93ed-2542fff10ebd",
+      "text_english": "I am Sunita, 28. I have had a mild cold and runny nose since yesterday, without fever."
+    }
+  ],
+  "language_detected": [
+    "hi-IN"
+  ],
+  "code_mixed": true,
+  "chief_complaint": "runny nose",
+  "complaint_group": "general",
+  "symptoms": [
+    {
+      "code": "fever",
+      "name": "fever",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "bukhar"
+    },
+    {
+      "code": "runny_nose",
+      "name": "runny nose",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "naak beh"
+    }
+  ],
+  "patient": {
+    "name": "Sunita",
+    "age": 28,
+    "sex": "female"
+  },
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "missing_information": [],
+  "suggested_level": "LOW",
+  "suggested_reason": "Demo symptom mapping",
+  "suggested_red_flags": [],
+  "confidence": "MEDIUM"
+}

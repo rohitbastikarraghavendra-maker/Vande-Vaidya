@@ -1,0 +1,56 @@
+{
+  "normalized_english": "I am Priya, 22. I have had severe right-sided abdominal pain since morning and vomiting.",
+  "turn_translations": [
+    {
+      "turn_id": "05ddba71-c23e-4c80-8538-01fb111fdf79",
+      "text_english": "I am Priya, 22. I have had severe right-sided abdominal pain since morning and vomiting."
+    }
+  ],
+  "language_detected": [
+    "hi-IN"
+  ],
+  "code_mixed": true,
+  "chief_complaint": "abdominal pain",
+  "complaint_group": "abdominal_pain",
+  "symptoms": [
+    {
+      "code": "abdominal_pain",
+      "name": "abdominal pain",
+      "present": true,
+      "duration": "since morning",
+      "duration_hours": null,
+      "severity": "severe",
+      "body_location": "right side",
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "pet mein"
+    },
+    {
+      "code": "vomiting",
+      "name": "vomiting",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "explicitly_stated": true,
+      "patient_words": "ulti"
+    }
+  ],
+  "patient": {
+    "name": "Priya",
+    "age": 22,
+    "sex": "female"
+  },
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "missing_information": [],
+  "suggested_level": "MEDIUM",
+  "suggested_reason": "Demo symptom mapping",
+  "suggested_red_flags": [],
+  "confidence": "MEDIUM"
+}

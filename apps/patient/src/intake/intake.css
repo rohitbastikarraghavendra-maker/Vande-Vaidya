@@ -1,0 +1,73 @@
+.intake header small {
+  margin-left: auto;
+}
+.intake input:not([type="radio"]),
+.intake select {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 4px;
+}
+.intake fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 12px;
+}
+.intake .choice {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  gap: 5px;
+  border: 1px solid #92a99b;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 3px;
+}
+.choice input {
+  width: auto;
+}
+.scale {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.intake input[type="range"] {
+  appearance: none;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: linear-gradient(90deg, #45965f, #e5ac40, #bb4136) center / 100%
+    10px no-repeat;
+}
+.intake input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background: white;
+  border: 3px solid #173d35;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.intake input[type="range"]::-moz-range-thumb {
+  background: white;
+  border: 3px solid #173d35;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+.symptom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+.intake label {
+  margin-top: 12px;
+}
+.intake .mic {
+  margin-top: 18px;
+}
+.intake .link {
+  margin-top: 8px;
+}

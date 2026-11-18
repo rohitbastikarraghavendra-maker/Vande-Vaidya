@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "assessment_id": "a33255ca-5c30-4609-a43b-fcc739906c81",
+  "patient_id": "e1d9da36-7c3c-4fa4-8355-31f01d041f94",
+  "patient_display_id": "PAT-3F8A",
+  "created_at": "2026-11-18T05:23:11.256Z",
+  "completed_at": "2026-11-18T05:23:11.263Z",
+  "language": {
+    "primary": "hi-IN",
+    "detected": [
+      "hi-IN"
+    ],
+    "code_mixed": true
+  },
+  "patient": {
+    "name": "Sunita",
+    "age": 28,
+    "sex": "female",
+    "village": null,
+    "phone": null
+  },
+  "transcript": {
+    "original": "Main Sunita, 28 saal. Mujhe kal se thoda sa sardi hai aur naak beh rahi hai, bukhar nahi hai.\nNo",
+    "normalized_english": "I am Sunita, 28. I have had a mild cold and runny nose since yesterday, without fever.\nIs breathing difficult? No",
+    "turns": [
+      {
+        "turn_id": "09c4ff7e-c5a3-45fe-93ed-2542fff10ebd",
+        "role": "patient",
+        "text": "Main Sunita, 28 saal. Mujhe kal se thoda sa sardi hai aur naak beh rahi hai, bukhar nahi hai.",
+        "text_english": "I am Sunita, 28. I have had a mild cold and runny nose since yesterday, without fever.",
+        "input_mode": "voice",
+        "question_id": null,
+        "created_at": "2026-11-18T05:23:11.258Z"
+      },
+      {
+        "turn_id": "3fa17c96-8df9-4d14-908c-dafaad31129e",
+        "role": "assistant",
+        "text": "Is breathing difficult?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "cp_breath",
+        "created_at": "2026-11-18T05:23:11.262Z"
+      },
+      {
+        "turn_id": "fc11aec0-d4b3-4ecb-be73-3dbe298c0ff5",
+        "role": "patient",
+        "text": "No",
+        "text_english": "No",
+        "input_mode": "button",
+        "question_id": "cp_breath",
+        "created_at": "2026-11-18T05:23:11.262Z"
+      }
+    ]
+  },
+  "chief_complaint": "runny nose",
+  "symptoms": [
+    {
+      "code": "fever",
+      "name": "fever",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "bukhar"
+    },
+    {
+      "code": "runny_nose",
+      "name": "runny nose",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "naak beh"
+    },
+    {
+      "code": "breathlessness",
+      "name": "breathlessness",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "No"
+    }
+  ],
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "red_flags": [],
+  "triage": {
+    "level": "LOW",
+    "reason": "Based on reported symptoms.",
+    "requires_escalation": false,
+    "confidence": "MEDIUM",
+    "rule_level": null,
+    "model_level": "LOW",
+    "decided_by": "MODEL",
+    "recommended_action": "Monitor your symptoms.",
+    "recommended_facility_type": null
+  },
+  "escalation": null,
+  "clinical_note": {
+    "format": "SBAR",
+    "situation": "28-year-old patient; complaint: runny nose.",
+    "background": "Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.",
+    "assessment": "Triage LOW. Based on reported symptoms. This is not a diagnosis.",
+    "recommendation": "Monitor your symptoms.",
+    "relevant_positives": [
+      "runny nose"
+    ],
+    "relevant_negatives": [
+      "fever",
+      "breathlessness"
+    ],
+    "reported_information": [
+      "Denies fever",
+      "runny nose",
+      "Denies breathlessness",
+      "Sunita",
+      "Age 28",
+      "female"
+    ],
+    "inferred_information": [],
+    "missing_information": [],
+    "vitals": "NOT_RECORDED",
+    "disclaimer": "Automated triage. Clinical review is required.",
+    "generated_by": "TEMPLATE",
+    "text": "Situation: 28-year-old patient; complaint: runny nose.\nBackground: Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.\nAssessment: Triage LOW. Based on reported symptoms. This is not a diagnosis.\nRecommendation: Monitor your symptoms."
+  },
+  "missing_information": [],
+  "pipeline": {
+    "degraded": false,
+    "stt_provider": "mock",
+    "llm_model": "mock",
+    "time_to_triage_ms": 7,
+    "errors": []
+  },
+  "referral": {
+    "status": "NOT_REFERRED",
+    "referral_id": null,
+    "facility_id": null,
+    "updated_at": null
+  },
+  "sync": {
+    "status": "PENDING",
+    "last_synced_at": null,
+    "updated_at": "2026-11-18T05:23:11.263Z",
+    "origin": "patient_app"
+  }
+}

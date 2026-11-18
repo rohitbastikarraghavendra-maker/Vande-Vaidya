@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "assessment_id": "469d2450-1d27-4b8d-b083-3707c2002ed6",
+  "patient_id": "17c5b329-ab3c-4660-bc8a-86c1196db5aa",
+  "patient_display_id": "PAT-R6TB",
+  "created_at": "2026-11-18T05:23:11.274Z",
+  "completed_at": "2026-11-18T05:23:11.275Z",
+  "language": {
+    "primary": "hi-IN",
+    "detected": [
+      "hi-IN"
+    ],
+    "code_mixed": true
+  },
+  "patient": {
+    "name": "Priya",
+    "age": 22,
+    "sex": "female",
+    "village": null,
+    "phone": null
+  },
+  "transcript": {
+    "original": "Mera naam Priya hai, 22 saal. Mere pet mein right side bahut tez dard hai since morning, ulti bhi ho rahi hai.\nUnsure\nNo\nNo",
+    "normalized_english": "I am Priya, 22. I have had severe right-sided abdominal pain since morning and vomiting.\nCould you be pregnant? Unsure\nAre you having vaginal bleeding? No\nDo you have a fever? No",
+    "turns": [
+      {
+        "turn_id": "05ddba71-c23e-4c80-8538-01fb111fdf79",
+        "role": "patient",
+        "text": "Mera naam Priya hai, 22 saal. Mere pet mein right side bahut tez dard hai since morning, ulti bhi ho rahi hai.",
+        "text_english": "I am Priya, 22. I have had severe right-sided abdominal pain since morning and vomiting.",
+        "input_mode": "voice",
+        "question_id": null,
+        "created_at": "2026-11-18T05:23:11.274Z"
+      },
+      {
+        "turn_id": "9e799153-0a37-4149-9f4a-88acba74bbd6",
+        "role": "assistant",
+        "text": "Could you be pregnant?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "ab_pregnancy",
+        "created_at": "2026-11-18T05:23:11.274Z"
+      },
+      {
+        "turn_id": "779647b8-4226-4901-a309-44c69753c4d5",
+        "role": "patient",
+        "text": "Unsure",
+        "text_english": "Unsure",
+        "input_mode": "button",
+        "question_id": "ab_pregnancy",
+        "created_at": "2026-11-18T05:23:11.274Z"
+      },
+      {
+        "turn_id": "8bdfba9f-554d-4f19-9993-dcb9b5df29e1",
+        "role": "assistant",
+        "text": "Are you having vaginal bleeding?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "ab_bleed",
+        "created_at": "2026-11-18T05:23:11.275Z"
+      },
+      {
+        "turn_id": "9c20de91-350b-46ad-a67f-1bd043c8d48c",
+        "role": "patient",
+        "text": "No",
+        "text_english": "No",
+        "input_mode": "button",
+        "question_id": "ab_bleed",
+        "created_at": "2026-11-18T05:23:11.275Z"
+      },
+      {
+        "turn_id": "b50f3184-62b0-4ae5-a2d2-430ad5dc0085",
+        "role": "assistant",
+        "text": "Do you have a fever?",
+        "text_english": null,
+        "input_mode": "text",
+        "question_id": "ha_fever",
+        "created_at": "2026-11-18T05:23:11.275Z"
+      },
+      {
+        "turn_id": "d085f535-b1d8-4775-baae-5c624cc65795",
+        "role": "patient",
+        "text": "No",
+        "text_english": "No",
+        "input_mode": "button",
+        "question_id": "ha_fever",
+        "created_at": "2026-11-18T05:23:11.275Z"
+      }
+    ]
+  },
+  "chief_complaint": "abdominal pain",
+  "symptoms": [
+    {
+      "code": "abdominal_pain",
+      "name": "abdominal pain",
+      "present": true,
+      "duration": "since morning",
+      "duration_hours": null,
+      "severity": "severe",
+      "body_location": "right side",
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "pet mein"
+    },
+    {
+      "code": "vomiting",
+      "name": "vomiting",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "ulti"
+    },
+    {
+      "code": "vaginal_bleeding",
+      "name": "vaginal bleeding",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "No"
+    },
+    {
+      "code": "fever",
+      "name": "fever",
+      "present": false,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "No"
+    }
+  ],
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "red_flags": [
+    {
+      "code": "PREGNANCY_ABDOMINAL_PAIN",
+      "label": "Abdominal pain, pregnancy not excluded",
+      "level": "HIGH",
+      "source": "DETERMINISTIC_RULE",
+      "evidence": [
+        "abdominal_pain"
+      ]
+    },
+    {
+      "code": "SEVERE_ABDOMINAL_PAIN",
+      "label": "Severe abdominal pain with vomiting",
+      "level": "HIGH",
+      "source": "DETERMINISTIC_RULE",
+      "evidence": [
+        "abdominal_pain",
+        "vomiting"
+      ]
+    }
+  ],
+  "triage": {
+    "level": "HIGH",
+    "reason": "Abdominal pain, pregnancy not excluded; Severe abdominal pain with vomiting",
+    "requires_escalation": false,
+    "confidence": "MEDIUM",
+    "rule_level": "HIGH",
+    "model_level": "MEDIUM",
+    "decided_by": "RULE",
+    "recommended_action": "Seek prompt medical evaluation.",
+    "recommended_facility_type": "CHC"
+  },
+  "escalation": null,
+  "clinical_note": {
+    "format": "SBAR",
+    "situation": "22-year-old patient; complaint: abdominal pain.",
+    "background": "Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.",
+    "assessment": "Triage HIGH. Abdominal pain, pregnancy not excluded; Severe abdominal pain with vomiting This is not a diagnosis.",
+    "recommendation": "Seek prompt medical evaluation.",
+    "relevant_positives": [
+      "abdominal pain",
+      "vomiting"
+    ],
+    "relevant_negatives": [
+      "vaginal bleeding",
+      "fever"
+    ],
+    "reported_information": [
+      "abdominal pain",
+      "vomiting",
+      "Denies vaginal bleeding",
+      "Denies fever",
+      "Priya",
+      "Age 22",
+      "female"
+    ],
+    "inferred_information": [
+      "Abdominal pain, pregnancy not excluded (DETERMINISTIC_RULE)",
+      "Severe abdominal pain with vomiting (DETERMINISTIC_RULE)"
+    ],
+    "missing_information": [
+      "Answer unclear: Could you be pregnant?"
+    ],
+    "vitals": "NOT_RECORDED",
+    "disclaimer": "Automated triage. Clinical review is required.",
+    "generated_by": "TEMPLATE",
+    "text": "Situation: 22-year-old patient; complaint: abdominal pain.\nBackground: Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.\nAssessment: Triage HIGH. Abdominal pain, pregnancy not excluded; Severe abdominal pain with vomiting This is not a diagnosis.\nRecommendation: Seek prompt medical evaluation.\nMissing: Answer unclear: Could you be pregnant?"
+  },
+  "missing_information": [
+    "Answer unclear: Could you be pregnant?"
+  ],
+  "pipeline": {
+    "degraded": false,
+    "stt_provider": "mock",
+    "llm_model": "mock",
+    "time_to_triage_ms": 1,
+    "errors": []
+  },
+  "referral": {
+    "status": "NOT_REFERRED",
+    "referral_id": null,
+    "facility_id": null,
+    "updated_at": null
+  },
+  "sync": {
+    "status": "PENDING",
+    "last_synced_at": null,
+    "updated_at": "2026-11-18T05:23:11.275Z",
+    "origin": "patient_app"
+  }
+}

@@ -1,0 +1,224 @@
+:root {
+  font:
+    18px/1.5 "Segoe UI",
+    system-ui,
+    sans-serif;
+  color: #173d35;
+  background: #eef3ee;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+main {
+  width: min(100%, 480px);
+  background: #fffef9;
+  border: 1px solid #ced9cf;
+  border-radius: 24px;
+  padding: clamp(20px, 5vw, 38px);
+  box-shadow: 0 8px 38px #223e3410;
+}
+#root {
+  width: min(100%, 480px);
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #2d5a4b;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9e1d8;
+}
+.mark {
+  display: grid;
+  place-items: center;
+  background: #d9ecdc;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+}
+h1 {
+  font:
+    600 clamp(30px, 6vw, 41px)/1.17 Georgia,
+    serif;
+  letter-spacing: -0.035em;
+  margin: 30px 0 24px;
+}
+button,
+a.primary,
+summary,
+select,
+input,
+textarea {
+  font: inherit;
+}
+button,
+a.primary {
+  min-height: 48px;
+  border-radius: 12px;
+  border: 1px solid #92a99b;
+  background: white;
+  color: #173d35;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #166fbb;
+  outline-offset: 3px;
+}
+.tiles {
+  display: grid;
+  gap: 10px;
+}
+.tiles button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  text-align: left;
+  padding: 15px 20px;
+}
+.tiles button[aria-pressed="true"] {
+  border: 2px solid #17614e;
+  background: #e2f1e5;
+}
+.primary,
+.mic,
+a.primary {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #155745;
+  color: white;
+  font-weight: 650;
+  text-align: center;
+  text-decoration: none;
+}
+.primary {
+  margin-top: 16px;
+}
+.link {
+  border: 0;
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+footer,
+small {
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+  color: #52695b;
+}
+details {
+  margin: 14px 0;
+}
+summary {
+  cursor: pointer;
+  padding: 14px 0;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+select,
+input,
+textarea {
+  border: 1px solid #889c90;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 100%;
+}
+textarea {
+  width: 100%;
+  min-height: 110px;
+}
+input {
+  width: 90px;
+}
+.mic {
+  padding: 18px;
+}
+.mic span,
+.symbol {
+  display: block;
+  font-size: 44px;
+}
+.recording {
+  background: #a22624;
+}
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+.answers button {
+  flex: 1;
+}
+blockquote {
+  border-left: 3px solid #729b81;
+  margin: 14px 0;
+  padding: 8px 14px;
+  background: #edf4ed;
+  overflow-wrap: anywhere;
+}
+small {
+  display: block;
+}
+.outcome .symbol {
+  margin-top: 22px;
+}
+.outcome small {
+  font-weight: 700;
+}
+.LOW {
+  color: #1c6045;
+}
+.MEDIUM {
+  color: #705200;
+}
+.HIGH {
+  color: #873c0b;
+}
+.emergency-shell {
+  background: #931e26;
+  color: white;
+}
+.emergency-shell header,
+.emergency-shell .link {
+  color: white;
+}
+.emergency-shell .mark {
+  color: #75121c;
+}
+.emergency-shell .call {
+  background: white;
+  color: #68161e;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+}
+button:disabled {
+  opacity: 0.55;
+}
+section small {
+  margin: 12px 0;
+}
+a.primary {
+  padding: 18px;
+}

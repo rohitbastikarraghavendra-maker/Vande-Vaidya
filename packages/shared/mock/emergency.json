@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "assessment_id": "b986d26a-a4c1-4948-ab93-733d3736b668",
+  "patient_id": "6be62af4-4d75-41a5-9924-5a15b6f6c212",
+  "patient_display_id": "PAT-9D4K",
+  "created_at": "2026-11-18T05:23:11.276Z",
+  "completed_at": "2026-11-18T05:23:11.277Z",
+  "language": {
+    "primary": "kn-IN",
+    "detected": [
+      "kn-IN"
+    ],
+    "code_mixed": true
+  },
+  "patient": {
+    "name": null,
+    "age": 54,
+    "sex": "unknown",
+    "village": null,
+    "phone": null
+  },
+  "transcript": {
+    "original": "Nange half an hour inda chest alli tumba pain ide, usiraata kashta aagtide, bevaru bartide. Nanage fifty four years.",
+    "normalized_english": "Severe chest pain for half an hour, difficulty breathing and sweating. I am 54 years old.",
+    "turns": [
+      {
+        "turn_id": "eea35bb3-f11e-436c-9841-aada8aed59e3",
+        "role": "patient",
+        "text": "Nange half an hour inda chest alli tumba pain ide, usiraata kashta aagtide, bevaru bartide. Nanage fifty four years.",
+        "text_english": "Severe chest pain for half an hour, difficulty breathing and sweating. I am 54 years old.",
+        "input_mode": "voice",
+        "question_id": null,
+        "created_at": "2026-11-18T05:23:11.276Z"
+      }
+    ]
+  },
+  "chief_complaint": "chest pain",
+  "symptoms": [
+    {
+      "code": "chest_pain",
+      "name": "chest pain",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "chest alli tumba pain"
+    },
+    {
+      "code": "breathlessness",
+      "name": "breathlessness",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "usiraata kashta"
+    },
+    {
+      "code": "sweating",
+      "name": "sweating",
+      "present": true,
+      "duration": null,
+      "duration_hours": null,
+      "severity": "unknown",
+      "body_location": null,
+      "onset": "unknown",
+      "source": "REPORTED",
+      "patient_words": "bevaru"
+    }
+  ],
+  "history": {
+    "conditions": [],
+    "medications": [],
+    "pregnancy_status": "unknown"
+  },
+  "red_flags": [
+    {
+      "code": "CHEST_PAIN_DYSPNEA",
+      "label": "Chest pain with breathing difficulty",
+      "level": "EMERGENCY",
+      "source": "DETERMINISTIC_RULE",
+      "evidence": [
+        "chest_pain",
+        "breathlessness"
+      ]
+    },
+    {
+      "code": "CHEST_PAIN_CARDIAC_SIGNS",
+      "label": "Chest pain with sweating, radiation or fainting",
+      "level": "EMERGENCY",
+      "source": "DETERMINISTIC_RULE",
+      "evidence": [
+        "chest_pain",
+        "sweating"
+      ]
+    },
+    {
+      "code": "CHEST_PAIN",
+      "label": "Chest pain",
+      "level": "HIGH",
+      "source": "DETERMINISTIC_RULE",
+      "evidence": [
+        "chest_pain"
+      ]
+    }
+  ],
+  "triage": {
+    "level": "EMERGENCY",
+    "reason": "Chest pain with breathing difficulty; Chest pain with sweating, radiation or fainting",
+    "requires_escalation": true,
+    "confidence": "MEDIUM",
+    "rule_level": "EMERGENCY",
+    "model_level": "MEDIUM",
+    "decided_by": "RULE",
+    "recommended_action": "Seek emergency medical care immediately. Call 108.",
+    "recommended_facility_type": "EMERGENCY_HOSPITAL"
+  },
+  "escalation": {
+    "event_id": "bdd23463-2135-467f-ae36-5500bf346226",
+    "created_at": "2026-11-18T05:23:11.277Z",
+    "reason": "Chest pain with breathing difficulty; Chest pain with sweating, radiation or fainting",
+    "red_flag_codes": [
+      "CHEST_PAIN_DYSPNEA",
+      "CHEST_PAIN_CARDIAC_SIGNS",
+      "CHEST_PAIN"
+    ],
+    "patient_instruction_shown": true,
+    "emergency_call_offered": true
+  },
+  "clinical_note": {
+    "format": "SBAR",
+    "situation": "54-year-old patient; complaint: chest pain.",
+    "background": "Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.",
+    "assessment": "Triage EMERGENCY. Chest pain with breathing difficulty; Chest pain with sweating, radiation or fainting This is not a diagnosis.",
+    "recommendation": "Seek emergency medical care immediately. Call 108.",
+    "relevant_positives": [
+      "chest pain",
+      "breathlessness",
+      "sweating"
+    ],
+    "relevant_negatives": [],
+    "reported_information": [
+      "chest pain",
+      "breathlessness",
+      "sweating",
+      "Age 54"
+    ],
+    "inferred_information": [
+      "Chest pain with breathing difficulty (DETERMINISTIC_RULE)",
+      "Chest pain with sweating, radiation or fainting (DETERMINISTIC_RULE)",
+      "Chest pain (DETERMINISTIC_RULE)"
+    ],
+    "missing_information": [],
+    "vitals": "NOT_RECORDED",
+    "disclaimer": "Automated triage. Clinical review is required.",
+    "generated_by": "TEMPLATE",
+    "text": "Situation: 54-year-old patient; complaint: chest pain.\nBackground: Conditions: not reported. Medicines: not reported. Pregnancy status: unknown. Vitals not recorded.\nAssessment: Triage EMERGENCY. Chest pain with breathing difficulty; Chest pain with sweating, radiation or fainting This is not a diagnosis.\nRecommendation: Seek emergency medical care immediately. Call 108."
+  },
+  "missing_information": [],
+  "pipeline": {
+    "degraded": false,
+    "stt_provider": "mock",
+    "llm_model": "mock",
+    "time_to_triage_ms": 1,
+    "errors": []
+  },
+  "referral": {
+    "status": "NOT_REFERRED",
+    "referral_id": null,
+    "facility_id": null,
+    "updated_at": null
+  },
+  "sync": {
+    "status": "PENDING",
+    "last_synced_at": null,
+    "updated_at": "2026-11-18T05:23:11.277Z",
+    "origin": "patient_app"
+  }
+}
